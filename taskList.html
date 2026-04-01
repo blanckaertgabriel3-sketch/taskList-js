@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task List</title>
+	<link rel="stylesheet" href="taskList.css">
+</head>
+
+<body>
+	<h1>Task List</h1>
+	<button id="btnAddList">Add new List</button>
+	<main>
+		<section id="listCards">
+			<div class="listCard">
+				<div class="cardHeader">
+					<input class="listName" type="text" value="List Name">
+					<button class="addTask">➕</button>
+					<button class="modifyListName">🖊️</button>
+					<button class="deleteListCard">❌</button>
+				</div>
+				<div class="tasks">
+					<div class="task">
+						<input class="taskName" type="text" value="New Task">
+						<div class="btnTask">
+							<button class="modifyTaskName">🖊️</button>
+							<button class="deleteTask">❌</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="taskList.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 75px;
+}
+#btnAddList {
+	padding: 10px 65px;
+}
+#listCards {
+	width: 80%;
+	height: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 15px;
+
+}
+/* card */
+.listCard {
+	flex-direction: column;
+	display: flex;
+	min-height: 85px;
+	border-radius: 16px;
+	background-color: rgb(148, 148, 148);
+}
+.cardHeader {
+	padding: 6px 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.cardHeader > * {
+	height: 25px;
+	box-sizing: border-box;
+}
+.tasks {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+.task {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.btnTask {
+	box-sizing: border-box;
+
+}
