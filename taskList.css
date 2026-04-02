@@ -1,12 +1,45 @@
+:root {
+	--originalColor: #598790;
+	--light1: #6a939b;
+	--light2: #7a9fa6;
+	--light3: #8babb1;
+	--light4: #9bb7bc;
+	--dark1: #507a82;
+	--dark2: #476c73;
+	--dark3: #3e5f65;
+	--dark4: #355156;
+}
 * {
 	margin: 0;
 	padding: 0;
+}
+html {
+	background-color: var(--light4);
+}
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+header button {
+	background-color: var(--dark2);
+	border: none;
+	border-radius: 6px;
+
 }
 main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 75px;
+}
+input {
+	display: flex;
+	justify-content: center;
+	padding: 5px 0 5px 8px;
+	border: none;
 }
 #btnAddList {
 	padding: 10px 65px;
@@ -25,30 +58,50 @@ main {
 	flex-direction: column;
 	display: flex;
 	min-height: 85px;
-	border-radius: 16px;
-	background-color: rgb(148, 148, 148);
+	padding: 10px;
+	border-radius: 8px;
+	background-color: var(--dark1);
+}
+.listCard input {
+	background-color: var(--light4);
 }
 .cardHeader {
-	padding: 6px 0;
+	padding-bottom: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
+	gap: 4px;
 }
 .cardHeader > * {
-	height: 25px;
+	border: none;
 	box-sizing: border-box;
+}
+.cardHeader button{
+	background-color: var(--light4);
+	box-shadow: none;
+	width: 20px;
+	align-self: stretch;
 }
 .tasks {
 	display: flex;
 	flex-direction: column;
-	margin-left: 20px;
 }
 .task {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	gap: 4px;
+}
+input.taskName {
+    flex: 1;
 }
 .btnTask {
-	box-sizing: border-box;
-
+	display: flex;
+	gap: 4px;
+}
+.btnTask button {
+	border: none;
+	align-self: stretch;
+	width: 20px;
+	background-color: var(--light4);
 }
