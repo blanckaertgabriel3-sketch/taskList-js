@@ -14,7 +14,7 @@
 	padding: 0;
 }
 html {
-	background-color: var(--light4);
+	background-color: var(--light3);
 }
 header {
 	display: flex;
@@ -25,7 +25,7 @@ header {
 	padding-bottom: 30px;
 }
 header button {
-	background-color: var(--dark2);
+	background-color: var(--dark1);
 	border: none;
 	border-radius: 6px;
 
